@@ -6,9 +6,9 @@ const os = require('os');
 document.getElementById("login-button").addEventListener("click", function(e) {
   e.preventDefault();
   
-  window.location.href = "./pagina1/pagina.html"
+  window.location.href = "pagina.html";
   
-}
+});
 
 
 function createMainWindow () {
