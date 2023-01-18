@@ -2,21 +2,13 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const os = require('os');
 
-
-document.getElementById("login-button").addEventListener("click", function(e) {
-  e.preventDefault();
-  
-  window.location.href = "pagina.html";
-  
-});
-
-
 function createMainWindow () {
     const janela = new BrowserWindow({
       autoHideMenuBar: true,
         width: 800,
         height: 600,
         icon: __dirname + '/images/icon.png',
+        resizable: true,
 
     })
 
